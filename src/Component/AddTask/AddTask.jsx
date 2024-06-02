@@ -17,7 +17,7 @@ import generateId from '../../utils/generateId'; // Adjust the path as needed
   
     return (
       <div>
-        <button onClick={handleAddTask}>Add Task</button>
+        <button onClick={()=> dispatch (handleAddTask())}>Add Task</button>
         <ul>
           {tasks.map(task => (
             <li key={task.id}>{task.title}</li>
